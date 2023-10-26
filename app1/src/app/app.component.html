@@ -1,9 +1,10 @@
+<!-- Título -->
 <h1 style="text-align: center;">
   Bienvenido a {{ title }}
 </h1>
 
 
-
+<!-- Directivas nglf & ngFor -->
 <div>
   <p>Nombre del Empleado: {{nombre}}</p>
   <p>Edad: {{edad}}</p>  
@@ -16,4 +17,11 @@
       <td>{{sueldo}}</td>
     </tr>
   </table>
+</div>
+
+<!-- Captura de eventos -->
+<div>
+  <p>{{contador}}</p>
+  <button (click)="incrementar()">Sumar 1</button>
+  <button (click)="decrementar()">Restar 1</button>
 </div>
