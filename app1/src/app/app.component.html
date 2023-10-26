@@ -25,3 +25,10 @@
   <button (click)="incrementar()">Sumar 1</button>
   <button (click)="decrementar()">Restar 1</button>
 </div>
+
+<!-- Directiva ngModel -->
+<div>
+  <p>Ingrese nombre <input type="text" [(ngModel)]="nombre2"></p>
+  <p>Ingrese apellido <input type="text" [(ngModel)]="apellido"></p>  
+  <p>Nombre completo: {{nombre2}}, {{apellido}}</p>
+</div>
